@@ -1,0 +1,53 @@
+.module.inactive {
+  opacity: 0;
+  transform: translateY(12rem);
+  pointer-events: none;
+}
+
+.module {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  height: 13rem;
+  box-shadow: 0 -4px 10px 0 rgba(99, 96, 96, 0.24);
+  border-radius: 1.8rem 1.8rem 0 0;
+  background-color: #fdfbfb;
+  transition: all .223s ease-in-out;
+}
+
+.module > .button {
+  padding: 1.3rem;
+  border-radius: 1.2rem;
+  color: #ffffff !important;
+  font-size: 1.6rem;
+  height: auto;
+  background: linear-gradient(60deg, #f33f1f, #fb6a50, #ffd2c4);
+  box-shadow: 2px 2px 6px 0 rgba(99, 96, 96, 0.24);
+  width: 80%;
+}
+
+.module > a {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.2rem;
+  margin: .5rem auto 0;
+  text-align: center;
+}
+
+.module > a:hover,
+.module > a:focus,
+.module > a:active {
+  color: #747474;
+}
+
+@media (min-width: 768px) {
+  .module {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
